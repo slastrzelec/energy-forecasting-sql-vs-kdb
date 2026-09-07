@@ -1,0 +1,9 @@
+engine,n_blocks,query,avg_ms
+kdb,30,load_data,215046
+kdb,30,set_g_attr_LCLid,844.4626
+kdb,30,Q1_full_count,0.0006673333
+kdb,30,Q2_point_filter,0.047944
+kdb,30,Q3_groupby_household,291.6567
+kdb,30,Q4_groupby_hour_of_day,645.3787
+kdb,30,Q4_alt_groupby_hour_of_day,649.7112
+kdb,30,Q5_join_groupby_acorn,404.8905

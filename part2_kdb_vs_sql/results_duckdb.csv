@@ -1,0 +1,7 @@
+engine,n_blocks,query,avg_ms,n_result_rows
+duckdb,30,load_data,9665.51,45948372
+duckdb,30,Q1 full_count,2.15,1
+duckdb,30,Q2 point_filter (single household),2.36,1
+duckdb,30,Q3 groupby_household (avg per LCLid),133.33,1500
+duckdb,30,Q4 groupby_hour_of_day,41.12,24
+duckdb,30,Q5 join_groupby_acorn,226.80,2

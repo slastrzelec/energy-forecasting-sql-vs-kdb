@@ -1,0 +1,30 @@
+# --- Secrets ---
+.env
+
+# --- Debug/diagnostic scratch files (contain local KDB-X license/email in output) ---
+part2_kdb_vs_sql/diag.q
+part2_kdb_vs_sql/diag_output.txt
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.egg-info/
+.ipynb_checkpoints/
+*venv*/
+kdb-project-env/
+
+# --- Jupyter ---
+.jupyter/
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editors ---
+.vscode/
+.idea/
+
+# --- Large source dataset (not part of this repo, fetched separately) ---
+part2_kdb_vs_sql/halfhourly_dataset/
+part2_kdb_vs_sql/informations_households.csv
