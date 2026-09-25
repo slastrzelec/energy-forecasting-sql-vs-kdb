@@ -28,3 +28,6 @@ desktop.ini
 # --- Large source dataset (not part of this repo, fetched separately) ---
 part2_kdb_vs_sql/halfhourly_dataset/
 part2_kdb_vs_sql/informations_households.csv
+
+# --- Local scratch, moved out of the repo (kept locally, not tracked) ---
+_to_delete/

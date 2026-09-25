@@ -107,15 +107,28 @@ and findings: [`part2_kdb_vs_sql/`](part2_kdb_vs_sql/).
 ├── data/                          # Part 1 — small derived tables (segmentation, anomalies)
 ├── visualisations/                # Part 1 — chart exports
 ├── *.png                          # Part 1 — chart exports (root level)
+├── requirements.txt                # Part 1 — Python dependencies
+├── LICENSE
 └── part2_kdb_vs_sql/
     ├── benchmark_q.q              # kdb+/q benchmark script
     ├── benchmark_duckdb.py        # DuckDB benchmark script
+    ├── requirements.txt            # Part 2 — Python (DuckDB side) dependency
     ├── results_q.csv              # kdb+/q results (30-block run)
     ├── results_duckdb.csv         # DuckDB results (30-block run)
     ├── main_comparison.png        # chart: headline comparison
     ├── speedup_factor.png         # chart: per-query speedup/slowdown
     ├── attribute_impact.png       # chart: g# attribute before/after
     └── README.md                  # Part 2 — full methodology
+```
+
+## Running Part 1 locally
+
+Requires AWS credentials with read access to the S3 bucket/Athena database used
+by the notebooks (not included — see `.env`/AWS config setup in `london.ipynb`).
+
+```bash
+pip install -r requirements.txt
+jupyter notebook aws_proj.ipynb
 ```
 
 ## Running Part 2 locally
@@ -127,6 +140,7 @@ the dataset source and full run instructions.
 
 ```bash
 cd part2_kdb_vs_sql
+pip install -r requirements.txt
 export SQL_KDB_DATA_DIR=/path/to/dataset
 
 # DuckDB
@@ -140,6 +154,10 @@ q benchmark_q.q 30 3
 
 - Part 1: [4TU.ResearchData](https://data.4tu.nl/) — Low Carbon London smart meter dataset
 - Part 2: [Kaggle — Smart meters in London](https://www.kaggle.com/datasets/jeanmidev/smart-meters-in-london) (`jeanmidev/smart-meters-in-london`)
+
+## License
+
+MIT License.
 
 ## Author
 

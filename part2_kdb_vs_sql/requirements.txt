@@ -1,0 +1,3 @@
+# Part 2 — KDB+/Q vs SQL benchmark, Python (DuckDB) side
+# (the kdb+/q side needs KDB-X Community Edition, see README)
+duckdb>=0.10
